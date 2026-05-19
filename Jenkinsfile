@@ -6,13 +6,6 @@ pipeline {
     }
 
     stages {
-
-        stage('Clone Repository') {
-            steps {
-                git 'https://github.com/codewkaushik404/Regex-Tools-Hub.git'
-            }
-        }
-
         stage('Install Backend Dependencies') {
             steps {
                 dir('backend') {
