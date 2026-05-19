@@ -1,4 +1,5 @@
 pipeline {
+
     agent any
 
     tools {
@@ -6,10 +7,11 @@ pipeline {
     }
 
     stages {
+
         stage('Install Backend Dependencies') {
             steps {
                 dir('backend') {
-                    bat 'npm install'
+                    sh 'npm install'
                 }
             }
         }
@@ -17,7 +19,7 @@ pipeline {
         stage('Install Frontend Dependencies') {
             steps {
                 dir('frontend') {
-                    bat 'npm install'
+                    sh 'npm install'
                 }
             }
         }
@@ -25,7 +27,7 @@ pipeline {
         stage('Build Frontend') {
             steps {
                 dir('frontend') {
-                    bat 'npm run build'
+                    sh 'npm run build'
                 }
             }
         }
