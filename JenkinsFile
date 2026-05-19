@@ -1,0 +1,48 @@
+pipeline {
+
+    agent any
+
+    tools {
+        nodejs 'Node24'
+    }
+
+    stages {
+
+        stage('Clone Repository') {
+            steps {
+                git 'https://github.com/codewkaushik404/Regex-Tools-Hub.git'
+            }
+        }
+
+        stage('Install Backend Dependencies') {
+            steps {
+                dir('backend') {
+                    bat 'npm install'
+                }
+            }
+        }
+
+        stage('Install Frontend Dependencies') {
+            steps {
+                dir('frontend') {
+                    bat 'npm install'
+                }
+            }
+        }
+
+        stage('Build Frontend') {
+            steps {
+                dir('frontend') {
+                    bat 'npm run build'
+                }
+            }
+        }
+
+        stage('Success') {
+            steps {
+                echo 'Pipeline executed successfully!'
+            }
+        }
+
+    }
+}
