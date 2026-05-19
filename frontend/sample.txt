@@ -1,0 +1,10 @@
+[2025-11-12 09:01:24] INFO  UserID=U10234  Login successful  IP=192.168.1.10
+[2025-11-12 09:02:45] WARN  UserID=U10892  Multiple failed login attempts  IP=10.0.0.5
+[2025-11-12 09:05:03] INFO  UserID=U10321  Session started  IP=172.16.0.15
+[2025-11-12 09:09:37] INFO  UserID=U10777  Password changed  IP=192.168.1.20
+[2025-11-12 09:14:59] ERROR UserID=U10555  Unauthorized access detected  IP=203.0.113.45
+[2025-11-12 09:18:23] INFO  UserID=U10984  Logout successful  IP=10.10.10.10
+[2025-11-12 09:22:56] WARN  UserID=U10001  Account locked after 3 failed attempts  IP=192.168.2.50
+[2025-11-12 09:29:18] INFO  UserID=U10412  Login successful  IP=198.51.100.17
+[2025-11-12 09:33:41] INFO  UserID=U10699  Session timed out  IP=203.0.113.88
+[2025-11-12 09:38:52] ERROR UserID=U10111  Suspicious login detected  IP=45.79.201.120
